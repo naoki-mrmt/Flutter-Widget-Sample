@@ -11,4 +11,4 @@ labels: new
 - [ ] XXXX
 - [ ] XXXX
 
-## 参考リンク or 画像...
+## Reference
