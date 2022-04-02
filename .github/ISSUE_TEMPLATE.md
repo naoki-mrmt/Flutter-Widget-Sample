@@ -1,15 +1,13 @@
----
-name: Issue Template
-about: Issueテンプレート
-title: ''
-labels: ''
-assignees: naoki-mrnk
+// Template name
+issue template
 
----
+// About 
+作るWidgetをチケット化したい...
 
-## 概要
+// Template content
+## Overview
 
-## やること
-- [ ] 
-
-## 参考URL
+## Task
+- [ ] XXXX
+- [ ] XXXX
+- [ ] XXXX
