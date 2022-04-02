@@ -6,9 +6,4 @@ labels: new
 
 ## Overview
 
-## Task
-- [ ] XXXX
-- [ ] XXXX
-- [ ] XXXX
-
 ## Reference
