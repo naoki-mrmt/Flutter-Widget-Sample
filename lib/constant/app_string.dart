@@ -7,6 +7,8 @@ class AppString {
   static const appTitle = 'Flutter-Widget-Sample';
   static const list = 'List';
 
+  static const notFoundPage = 'Page Not Found';
+
   // List
   static const listViewBuilderArray = [
     'data1',

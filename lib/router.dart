@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_widget_sample/constant/app_string.dart';
 import 'package:flutter_widget_sample/constant/route_name.dart';
 import 'package:flutter_widget_sample/screen/list_builder.dart';
 
@@ -11,7 +12,7 @@ Route<dynamic> generateRoute(RouteSettings settings) {
     default:
       builder = (_) => const Scaffold(
             body: Center(
-              child: Text('Page Not Found'),
+              child: Text(AppString.notFoundPage),
             ),
           );
       break;
