@@ -37,9 +37,33 @@ class HomePage extends StatelessWidget {
         ),
       ),
       body: Center(
-        child: _listBuilder(),
+        child: _expansionTile(),
       ),
     );
+  }
+
+  Widget _expansionTile() {
+    return Column(
+      children: [
+        ExpansionTile(
+          title: const Text(AppString.list),
+          children: [
+            ListTile(
+              title: const Text('ListView.builder'),
+              onTap: _tap,
+            ),
+            const ListTile(
+              title: Text('ListView.generate'),
+            )
+          ],
+        ),
+      ],
+    );
+  }
+
+  // FIXME: 仮置き
+  void _tap() {
+    print('hoge');
   }
 
   Widget _listBuilder() {
