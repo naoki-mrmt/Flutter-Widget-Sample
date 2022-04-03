@@ -44,10 +44,10 @@ class HomePage extends StatelessWidget {
 
   Widget _listBuilder() {
     return ListView.builder(
-      itemCount: AppString.listSampleList.length,
+      itemCount: AppString.listViewBuilder.length,
       itemBuilder: (BuildContext context, int index) {
         return ListTile(
-          title: Text(AppString.listSampleList[index]),
+          title: Text(AppString.listViewBuilder[index]),
         );
       },
     );

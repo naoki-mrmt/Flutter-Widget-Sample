@@ -7,7 +7,7 @@ class AppString {
   static const appTitle = 'Flutter-Widget-Sample';
 
   // List
-  static const listSampleList = [
+  static const listViewBuilder = [
     'data1',
     'data2',
     'data3',
