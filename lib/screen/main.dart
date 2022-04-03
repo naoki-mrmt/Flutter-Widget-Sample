@@ -15,15 +15,15 @@ class FlutterWidgetSample extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const HomePage(
+      home: const _HomePage(
         navBarTitle: AppString.appTitle,
       ),
     );
   }
 }
 
-class HomePage extends StatelessWidget {
-  const HomePage({Key? key, required this.navBarTitle}) : super(key: key);
+class _HomePage extends StatelessWidget {
+  const _HomePage({Key? key, required this.navBarTitle}) : super(key: key);
 
   final String navBarTitle;
 
@@ -52,8 +52,9 @@ class HomePage extends StatelessWidget {
               title: const Text('ListView.builder'),
               onTap: _tap,
             ),
-            const ListTile(
-              title: Text('ListView.generate'),
+            ListTile(
+              title: const Text('ListView.generate'),
+              onTap: _tap,
             )
           ],
         ),
