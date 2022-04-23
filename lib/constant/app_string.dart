@@ -6,6 +6,9 @@ class AppString {
   // String
   static const appTitle = 'Flutter-Widget-Sample';
   static const list = 'List';
+  static const listViewBuilder = 'ListView.builder';
+  static const listViewGenerate = 'ListView.generate';
+  static const listViewSeparated = 'ListView.separated';
 
   static const notFoundPage = 'Page Not Found';
 
