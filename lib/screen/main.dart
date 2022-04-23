@@ -51,6 +51,14 @@ class HomePage extends StatelessWidget {
           children: [
             ListTile(
               title: const Text(AppString.listViewBuilder),
+              onTap: () => Navigator.push(
+                context,
+                MaterialPageRoute<void>(
+                  builder: (context) {
+                    return const ListBuilderView();
+                  },
+                ),
+              ),
             ),
             const ListTile(
               title: Text(AppString.listViewGenerate),
