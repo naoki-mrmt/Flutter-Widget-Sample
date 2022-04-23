@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_widget_sample/constant/app_string.dart';
+import 'package:flutter_widget_sample/screen/list_builder.dart';
 
 void main() {
   runApp(const FlutterWidgetSample());
@@ -15,15 +16,15 @@ class FlutterWidgetSample extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const _HomePage(
+      home: const HomePage(
         navBarTitle: AppString.appTitle,
       ),
     );
   }
 }
 
-class _HomePage extends StatelessWidget {
-  const _HomePage({Key? key, required this.navBarTitle}) : super(key: key);
+class HomePage extends StatelessWidget {
+  const HomePage({Key? key, required this.navBarTitle}) : super(key: key);
 
   final String navBarTitle;
 
@@ -37,44 +38,29 @@ class _HomePage extends StatelessWidget {
         ),
       ),
       body: Center(
-        child: _expansionTile(),
+        child: _expansionTile(context),
       ),
     );
   }
 
-  Widget _expansionTile() {
+  Widget _expansionTile(BuildContext context) {
     return Column(
       children: [
         ExpansionTile(
           title: const Text(AppString.list),
           children: [
             ListTile(
-              title: const Text('ListView.builder'),
-              onTap: _tap,
+              title: const Text(AppString.listViewBuilder),
             ),
-            ListTile(
-              title: const Text('ListView.generate'),
-              onTap: _tap,
-            )
+            const ListTile(
+              title: Text(AppString.listViewGenerate),
+            ),
+            const ListTile(
+              title: Text(AppString.listViewSeparated),
+            ),
           ],
         ),
       ],
-    );
-  }
-
-  // FIXME: 仮置き
-  void _tap() {
-    print('hoge');
-  }
-
-  Widget _listBuilder() {
-    return ListView.builder(
-      itemCount: AppString.listViewBuilderArray.length,
-      itemBuilder: (BuildContext context, int index) {
-        return ListTile(
-          title: Text(AppString.listViewBuilderArray[index]),
-        );
-      },
     );
   }
 }
