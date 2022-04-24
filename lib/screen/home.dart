@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_widget_sample/constant/app_string.dart';
 import 'package:flutter_widget_sample/screen/list/list_builder.dart';
+import 'package:flutter_widget_sample/screen/list/list_separated.dart';
 
 class Home extends StatelessWidget {
   const Home({Key? key}) : super(key: key);
@@ -37,13 +38,16 @@ class Home extends StatelessWidget {
                 ),
               ),
             ),
-            const ListTile(
-              title: Text(AppString.listViewGenerate),
-              // onTap: {},
-            ),
-            const ListTile(
-              title: Text(AppString.listViewSeparated),
-              // onTap: {},
+            ListTile(
+              title: const Text(AppString.listViewSeparated),
+              onTap: () => Navigator.push(
+                context,
+                MaterialPageRoute<void>(
+                  builder: (context) {
+                    return const ListSeparatedView();
+                  },
+                ),
+              ),
             ),
           ],
         ),
