@@ -62,9 +62,11 @@ class HomePage extends StatelessWidget {
             ),
             const ListTile(
               title: Text(AppString.listViewGenerate),
+              // onTap: {},
             ),
             const ListTile(
               title: Text(AppString.listViewSeparated),
+              // onTap: {},
             ),
           ],
         ),
