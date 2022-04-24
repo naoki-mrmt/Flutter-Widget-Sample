@@ -5,9 +5,14 @@ class AppString {
 
   // String
   static const appTitle = 'Flutter-Widget-Sample';
+  static const list = 'List';
+  static const listViewBuilder = 'ListView.builder';
+  static const listViewSeparated = 'ListView.separated';
+
+  static const notFoundPage = 'Page Not Found';
 
   // List
-  static const listViewBuilder = [
+  static const listViewArray = [
     'data1',
     'data2',
     'data3',
