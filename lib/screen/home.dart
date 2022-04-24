@@ -24,32 +24,41 @@ class Home extends StatelessWidget {
   Widget _expansionTile(BuildContext context) {
     return Column(
       children: [
-        ExpansionTile(
-          title: const Text(AppString.list),
-          children: [
-            ListTile(
-              title: const Text(AppString.listViewBuilder),
-              onTap: () => Navigator.push(
-                context,
-                MaterialPageRoute<void>(
-                  builder: (context) {
-                    return const ListBuilderView();
-                  },
-                ),
-              ),
-            ),
-            ListTile(
-              title: const Text(AppString.listViewSeparated),
-              onTap: () => Navigator.push(
-                context,
-                MaterialPageRoute<void>(
-                  builder: (context) {
-                    return const ListSeparatedView();
-                  },
-                ),
-              ),
-            ),
-          ],
+        _listExpansionTile(
+          AppString.list,
+          context,
+        ),
+      ],
+    );
+  }
+
+  Widget _listTile(BuildContext context, String title, Widget widget) {
+    return ListTile(
+      title: Text(title),
+      onTap: () => Navigator.push(
+        context,
+        MaterialPageRoute<void>(
+          builder: (context) {
+            return widget;
+          },
+        ),
+      ),
+    );
+  }
+
+  Widget _listExpansionTile(String title, BuildContext context) {
+    return ExpansionTile(
+      title: const Text(AppString.list),
+      children: [
+        _listTile(
+          context,
+          AppString.listViewBuilder,
+          const ListBuilderView(),
+        ),
+        _listTile(
+          context,
+          AppString.listViewSeparated,
+          const ListSeparatedView(),
         ),
       ],
     );
