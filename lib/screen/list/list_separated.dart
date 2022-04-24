@@ -10,7 +10,7 @@ class ListSeparatedView extends StatelessWidget {
       appBar: AppBar(
         centerTitle: true,
         title: const Text(
-          AppString.listViewBuilder,
+          AppString.listViewSeparated,
         ),
       ),
       body: _listBuilder(),
