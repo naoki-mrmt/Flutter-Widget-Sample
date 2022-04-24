@@ -10,7 +10,7 @@ class ListBuilderView extends StatelessWidget {
       appBar: AppBar(
         centerTitle: true,
         title: const Text(
-          AppString.appTitle,
+          AppString.listViewBuilder,
         ),
       ),
       body: _listBuilder(),

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_widget_sample/constant/app_string.dart';
-import 'package:flutter_widget_sample/screen/list_builder.dart';
+import 'package:flutter_widget_sample/screen/list/list_builder.dart';
 
 class Home extends StatelessWidget {
   const Home({Key? key}) : super(key: key);
