@@ -12,7 +12,7 @@ class AppString {
   static const notFoundPage = 'Page Not Found';
 
   // List
-  static const listViewBuilderArray = [
+  static const listViewArray = [
     'data1',
     'data2',
     'data3',

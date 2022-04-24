@@ -19,10 +19,10 @@ class ListSeparatedView extends StatelessWidget {
 
   Widget _listBuilder() {
     return ListView.separated(
-      itemCount: AppString.listViewBuilderArray.length,
+      itemCount: AppString.listViewArray.length,
       separatorBuilder: (BuildContext context, int index) {
         return ListTile(
-          title: Text(AppString.listViewBuilderArray[index]),
+          title: Text(AppString.listViewArray[index]),
         );
       },
       itemBuilder: (BuildContext context, int index) {

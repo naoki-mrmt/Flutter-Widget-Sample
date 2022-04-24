@@ -19,10 +19,10 @@ class ListBuilderView extends StatelessWidget {
 
   Widget _listBuilder() {
     return ListView.builder(
-      itemCount: AppString.listViewBuilderArray.length,
+      itemCount: AppString.listViewArray.length,
       itemBuilder: (BuildContext context, int index) {
         return ListTile(
-          title: Text(AppString.listViewBuilderArray[index]),
+          title: Text(AppString.listViewArray[index]),
         );
       },
     );
